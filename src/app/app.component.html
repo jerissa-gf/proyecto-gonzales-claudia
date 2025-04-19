@@ -1,5 +1,5 @@
 <mat-toolbar>
-  <button mat-icon-button (click)="navigateToProducts()">
+  <button mat-icon-button (click)="navigateToProducts()" aria-label="Go to Products Home">
     <mat-icon>house</mat-icon>
   </button>
   <div class="nav-container">
@@ -12,9 +12,9 @@
   </div>
   <span></span>
   <span class="spacer"></span>
-  <button mat-icon-button matBadge="{{ cantidadEnCarrito }}" matBadgeColor="warn">
+  <button mat-icon-button matBadge="{{ cantidadEnCarrito }}" matBadgeColor="warn" aria-label="View Shopping Cart">
     <mat-icon>shopping_cart</mat-icon>
-  </button>  
+  </button>
 </mat-toolbar>
 
 <router-outlet></router-outlet>
