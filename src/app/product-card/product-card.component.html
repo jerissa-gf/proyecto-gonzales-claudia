@@ -1,0 +1,23 @@
+  <div class="product-card">
+    <div style="display: flex">
+      <img [src]="producto.imagen" class="product-image" />
+      <div class="div-align">
+        <button mat-fab class="small-fab" (click)="cambiarEstado()"
+                [style.color]="estado === 'AGREGADO AL CARRITO' ? '#e14fcc' : 'white'">
+          <mat-icon>favorite</mat-icon>
+        </button>
+        <button mat-fab class="small-fab" (click)="verDetalles()">
+          <mat-icon class="centered-icon">visibility</mat-icon>
+        </button>
+      </div>
+    </div>
+    <br />
+
+    <p class="p-estado">{{ estado }}</p>
+    <p>{{ producto.mensaje }}</p>
+    <hr />
+    <p>
+      <strong>Bs {{ producto.precio }}</strong>
+    </p>
+    <p class="producto-descripcion">{{ producto.descripcion }}</p>
+  </div>

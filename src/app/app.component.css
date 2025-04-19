@@ -1,0 +1,25 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
+.product-carousel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.product-carousel > app-product-card:nth-child(3n + 1) {
+  clear: left;
+}
+
+.example-button-container {
+  margin: 20px;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+
+.nav-container{
+  font-size: large
+}
