@@ -1,5 +1,20 @@
 {
   "projects": {
     "default": "diplomadogonzales"
+  },
+  "targets": {
+    "diplomadogonzales": {
+      "hosting": {
+        "master": [
+          "diplomadogonzales"
+        ],
+        "dev": [
+          "diplomadogonzalesdev"
+        ],
+        "qa": [
+          "diplomadogonzalesqa"
+        ]
+      }
+    }
   }
 }
